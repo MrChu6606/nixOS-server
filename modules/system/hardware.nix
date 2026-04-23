@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ../nixos/hardware-configuration.nix ];
+  imports = [ ../../nixos/hardware-configuration.nix ];
 }
