@@ -6,6 +6,7 @@
     curl
     neovim
     yazi
+    wl-copy
   ];
 in {
   environment.systemPackages = stable;

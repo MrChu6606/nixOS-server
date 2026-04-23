@@ -27,7 +27,6 @@
     enable = true;
     settings = {
       PasswordAuthentication = false;
-      permitRootLogin = "no";
     };
   };
 
