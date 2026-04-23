@@ -6,7 +6,7 @@
     curl
     neovim
     yazi
-    wl-copy
+    wl-clipboard
   ];
 in {
   environment.systemPackages = stable;
