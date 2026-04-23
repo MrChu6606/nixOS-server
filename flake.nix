@@ -20,11 +20,8 @@
       inherit system pkgs;
 
       modules = [
-        ./modules/hardware.nix
-        ./modules/packages.nix
-        ./modules/misc.nix
-        ./modules/shell.nix
-        ./modules/users.nix
+        ./modules/system
+	./modules/services
       ];
     };
   };
