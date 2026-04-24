@@ -23,7 +23,7 @@
   environment.variables.EDITOR = "nvim";
 
   # Enable docker
-  virtualization.docker = {
+  virtualisation.docker = {
     enable = true;
     daemon.settings = {
       data-root = "/mnt/appdata/docker";
