@@ -19,30 +19,16 @@
   nix.optimise.automatic = true;
   nix.optimise.dates = [ "weekly" ];
 
-  # Configure hostname
-  networking.hostName = "Sequoia";
-
-  # Configure ssh
-  services.openssh = {
-    enable = true;
-    settings = {
-      PasswordAuthentication = false;
-    };
-  };
-
-  # Setup Aahi to broadcast hostname
-  services.avahi =   {
-    enable = true;
-    nssmdns4 = true;
-    publish = {
-      enable = true;
-      addresses = true;
-      workstation = true;
-    };
-  };
-
   # Set neovim as default editor
   environment.variables.EDITOR = "nvim";
+
+  # Enable docker
+  virtualization.docker = {
+    enable = true;
+    daemon.settings = {
+      data-root = "/mnt/appdata/docker";
+    };
+  };
 
   system.stateVersion = "25.11";
 }
